@@ -2,7 +2,6 @@ import java.util.HashMap;
 import java.util.ArrayList;
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
-
 import static spark.Spark.*;
 
 public class App {
@@ -19,17 +18,15 @@ public class App {
   get("/score", (request, response) -> {
     HashMap model = new HashMap();
     model.put("template", "templates/score.vtl");
-
     String word = request.queryParams("word");
     Integer score = letterArray(word);
     model.put("score", score);
+    model.put("word", word);
     return new ModelAndView(model, layout);
   }, new VelocityTemplateEngine());
 }
 
   public static Integer scrabbleScore(char letter) {
-
-
     if (letter == 'D' || letter == 'G') {
       return 2;
     }
