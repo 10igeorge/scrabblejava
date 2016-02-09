@@ -37,6 +37,13 @@ public class AppTest {
     Integer score = 8;
     assertEquals(score, scrabble.scrabbleScore('J'));
   }
+
+  @Test
+  public void scrabbleScore_returnsAScrabbleScoreForALetter_10() {
+    App scrabble = new App();
+    Integer score = 10;
+    assertEquals(score, scrabble.scrabbleScore('Q'));
+  }
 }
 
 

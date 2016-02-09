@@ -29,6 +29,9 @@ public class App {
     if (letter == 'J' || letter == 'X') {
       totalScore += 8;
     }
+    if (letter == 'Q' || letter == 'Z') {
+      totalScore += 10;
+    }
     return totalScore;
   }
 }
