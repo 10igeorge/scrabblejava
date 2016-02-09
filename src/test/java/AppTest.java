@@ -44,6 +44,22 @@ public class AppTest {
     Integer score = 10;
     assertEquals(score, scrabble.scrabbleScore('Q'));
   }
+
+  @Test
+  public void scrabbleScore_returnsAScrabbleScoreForALetter_1() {
+    App scrabble = new App();
+    Integer score = 1;
+    assertEquals(score, scrabble.scrabbleScore('A'));
+  }
+
+  // @Test
+  // public void letterArray_splitWordIntoCharArray_splitWord() {
+  //   App scrabble = new App();
+  //   ArrayList<Char> splitWord = new ArrayList<Char>();
+  //   splitWord.add('A');
+  //   splitWord.add('B');
+  //   assertEquals(splitWord, scrabble.letterArray("AB"));
+  // }
 }
 
 

@@ -32,6 +32,14 @@ public class App {
     if (letter == 'Q' || letter == 'Z') {
       totalScore += 10;
     }
+    char[] score1 = { 'A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T' };
+    for (char x : score1){
+      if (x == letter){
+      totalScore +=1;
+      }
+    }
     return totalScore;
   }
+  //
+  // public static
 }
