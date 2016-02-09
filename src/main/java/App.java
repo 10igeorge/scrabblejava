@@ -6,7 +6,26 @@ import spark.template.velocity.VelocityTemplateEngine;
 import static spark.Spark.*;
 
 public class App {
-  public static void main(String[] args) {}
+  public static void main(String[] args) {
+    staticFileLocation("/public");
+    String layout = "templates/layout.vtl";
+
+  get("/form", (request, response) -> {
+    HashMap model = new HashMap();
+    model.put("template", "templates/form.vtl");
+    return new ModelAndView(model, layout);
+  }, new VelocityTemplateEngine());
+
+  get("/score", (request, response) -> {
+    HashMap model = new HashMap();
+    model.put("template", "templates/score.vtl");
+
+    String word = request.queryParams("word");
+    Integer score = letterArray(word);
+    model.put("score", score);
+    return new ModelAndView(model, layout);
+  }, new VelocityTemplateEngine());
+}
 
   public static Integer scrabbleScore(char letter) {
 
@@ -37,6 +56,7 @@ public class App {
 
   public static Integer letterArray(String word) {
     Integer totalScore = 0;
+    word = word.toUpperCase();
     char[] splitWord = word.toCharArray();
     for (char c : splitWord){
       totalScore += scrabbleScore(c);
