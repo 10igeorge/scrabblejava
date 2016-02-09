@@ -30,6 +30,13 @@ public class AppTest {
     Integer score = 5;
     assertEquals(score, scrabble.scrabbleScore('K'));
   }
+
+  @Test
+  public void scrabbleScore_returnsAScrabbleScoreForALetter_8() {
+    App scrabble = new App();
+    Integer score = 8;
+    assertEquals(score, scrabble.scrabbleScore('J'));
+  }
 }
 
 

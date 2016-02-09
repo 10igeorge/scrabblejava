@@ -26,6 +26,9 @@ public class App {
     if (letter == 'K'){
       totalScore += 5;
     }
+    if (letter == 'J' || letter == 'X') {
+      totalScore += 8;
+    }
     return totalScore;
   }
 }
