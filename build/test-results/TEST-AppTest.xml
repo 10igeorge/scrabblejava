@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-02-09T18:29:55" hostname="epicodus-68.local" time="0.001">
+<testsuite name="AppTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-02-09T19:10:46" hostname="epicodus-68.local" time="0.002">
   <properties/>
-  <testcase name="scrabbleScore_returnsAScrabbleScoreForALetter_10" classname="AppTest" time="0.001"/>
+  <testcase name="letterArray_splitWordIntoCharArray_splitWord" classname="AppTest" time="0.001"/>
+  <testcase name="scrabbleScore_returnsAScrabbleScoreForALetter_10" classname="AppTest" time="0.0"/>
   <testcase name="scrabbleScore_returnsAScrabbleScoreForALetter_1" classname="AppTest" time="0.0"/>
   <testcase name="scrabbleScore_returnsAScrabbleScoreForALetter_2" classname="AppTest" time="0.0"/>
   <testcase name="scrabbleScore_returnsAScrabbleScoreForALetter_3" classname="AppTest" time="0.0"/>

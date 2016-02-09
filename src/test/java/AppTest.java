@@ -52,14 +52,12 @@ public class AppTest {
     assertEquals(score, scrabble.scrabbleScore('A'));
   }
 
-  // @Test
-  // public void letterArray_splitWordIntoCharArray_splitWord() {
-  //   App scrabble = new App();
-  //   ArrayList<Char> splitWord = new ArrayList<Char>();
-  //   splitWord.add('A');
-  //   splitWord.add('B');
-  //   assertEquals(splitWord, scrabble.letterArray("AB"));
-  // }
+  @Test
+  public void letterArray_splitWordIntoCharArray_splitWord() {
+    App scrabble = new App();
+    Integer score = 4;
+    assertEquals(score, scrabble.letterArray("AB"));
+  }
 }
 
 
