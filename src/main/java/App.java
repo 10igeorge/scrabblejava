@@ -12,6 +12,8 @@ public class App {
     Integer totalScore = 0;
     if (letter == 'D' || letter == 'G') {
       totalScore += 2;
+    } if (letter == 'B' || letter == 'C' || letter == 'M' || letter == 'P') {
+      totalScore += 3;
     }
     return totalScore;
   }
