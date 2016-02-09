@@ -1,8 +1,13 @@
 <h1>Enter a word to find it's Scrabble score</h1>
 <form action='/score'>
   <div class="form-group">
-    <label for="word">Your word</label>
-    <input id="word" name="word" class="form-control" type="text">
+    <div class="row">
+      <div class="col col-md-4"></div>
+      <div class="col col-md-4">
+        <label for="word">Your word:</label>
+        <input id="word" name="word" class="form-control" type="text"><br>
+        <button type="submit" class="btn btn-info">Get Score!</button>
+      </div>
+    </div>
   </div>
-  <button type="submit" class="btn">Get Score!</button>
 </form>
